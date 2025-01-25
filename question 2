@@ -1,0 +1,28 @@
+public class TypeConversion {
+
+    public static void main(String[] args) {
+        int Valuei = 28;
+        double Valued = 3.14;
+        char Valuec = 'A';
+        boolean Valueb = true;
+
+        System.out.println("Before Conversion:");
+        System.out.println("int Value: " + Valuei);
+        System.out.println("double Value: " + Valued);
+        System.out.println("char Value: " + Valuec);
+        System.out.println("boolean Value: " + Valueb);
+
+        
+        double convertedDouble = (double) Valuei;
+
+        
+        int convertedIntFromChar = (int) Valuec;
+
+        
+        System.out.println("\nAfter Conversion:");
+        System.out.println("Converted double from int: " + convertedDouble);
+        System.out.println("Converted int from char: " + convertedIntFromChar);
+
+        System.out.println("booleanValue remains: " + Valueb);
+    }
+}
